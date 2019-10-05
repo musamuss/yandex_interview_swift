@@ -9,6 +9,7 @@ for i in 0..<count!{
 massive.append(element!)}
 last = element!
 }
+massive.sorted()
 for j in massive {
   print(j)
 }
