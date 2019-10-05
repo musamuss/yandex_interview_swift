@@ -1,0 +1,11 @@
+import Foundation 
+let string1 = readLine()
+let string2 = readLine()
+var a = string1!.sorted()
+var b = string2!.sorted()
+if a == b {
+print("1")
+} 
+else {
+print("0")
+}
