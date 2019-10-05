@@ -1,0 +1,14 @@
+import Foundation
+
+let count = Int(readLine()!)
+var massive = [Int]()
+var last = 0
+for i in 0..<count!{
+  let element = Int(readLine()!)
+  if element != last {
+massive.append(element!)}
+last = element!
+}
+for j in massive {
+  print(j)
+}
