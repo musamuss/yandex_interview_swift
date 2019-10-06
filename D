@@ -1,0 +1,18 @@
+import Foundation
+
+let n = Int(readLine()!)
+ func skobki(_ s:String,_ l: Int,_ r: Int,_ pairs: Int){
+   if l == pairs && r == pairs{
+    
+     print(s)
+   }
+   else{
+     if l < pairs {
+       skobki(s+"(",l+1,r,pairs)
+     }
+      if r < l {
+       skobki(s+")",l,r+1,pairs)
+     }
+   }
+ }
+skobki("",0,0,n!)
