@@ -1,0 +1,12 @@
+import Foundation
+var list = [Int]()
+let n = Int(readLine()!)
+var str = ""
+for _ in 0..<n!{
+  let s = readLine()!.components(separatedBy: " ").compactMap(Int.init)
+  list += s.dropFirst(1)
+}
+  for j in list.sorted(){
+  str += "\(j) "
+}
+print(str)
