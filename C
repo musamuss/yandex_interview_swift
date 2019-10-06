@@ -2,16 +2,15 @@ import Foundation
 
 let count = Int(readLine()!)
 var massive = [Int]()
-var last = -1
+var last = Int.min
 for _ in 0..<count!{
   let element = Int(readLine()!)
   if element != last {
-    
+  
 massive.append(element!)
 }
 last = element!
 }
-
 let filteredArray = Array(Set( massive))
 let massivesort = filteredArray.sorted()
 for j in massivesort {
